@@ -1,24 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+// import logo from './logo.svg';
+import "./App.css";
 
 function App() {
+  const [monsters, setMonsters] = useState([
+    { id: 1, name: "Frankenstein" },
+    { id: 2, name: "Dracule" },
+    { id: 3, name: "Golem" },
+    { id: 4, name: "Werewolf" },
+    { id: 5, name: "Dragon" }
+  ]);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {monsters.map(({ name, id }) => (
+        <h1 key={id}>{name}</h1>
+      ))}
     </div>
   );
 }
