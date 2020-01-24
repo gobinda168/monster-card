@@ -7,6 +7,7 @@ export const SearchBox = ({ handleSearch }) => {
         type="search"
         name="search"
         id="search"
+        className="search"
         placeholder="Search Monster"
         onChange={e => handleSearch(e)}
       />

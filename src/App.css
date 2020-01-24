@@ -1,13 +1,12 @@
-body {
-  /* padding: 30px; */
-}
+@import url("https://fonts.googleapis.com/css?family=Bigelow+Rules&display=swap");
 
 .App {
   text-align: center;
+  /* width: auto; */
 }
 
-/* h1 {
-  font-family: 'Bigelow Rules';
+h1 {
+  font-family: "Bigelow Rules";
   font-size: 72px;
   color: #0ccac4;
-} */
+}
